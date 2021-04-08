@@ -1,0 +1,17 @@
+<div class="container">
+
+  <h1>LET'S PLAY</h1>
+
+<ul class="inline-list">
+  <% @letters.each do |letter| %>
+    <li><%= letter %></li>
+  <% end %>
+</ul>
+
+<form action="/score" method="get">
+  <input type="text" name="word" placeholder="start here...">
+  <input type="submit" value="Go!">
+</form>
+
+</div>
+
